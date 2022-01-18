@@ -1,5 +1,6 @@
-const app = Vue.craeteApp({
+const app = Vue.createApp({
     data() {
+        return {
         sum: "",
         operators: [
             "1",
@@ -19,8 +20,8 @@ const app = Vue.craeteApp({
             ".",
 
         ],
-    },
-
+    };
+},
 
 methods: {
     addToSum(operator) {
@@ -34,11 +35,8 @@ methods: {
     clearSum() {
         this.sum = ""
     },
+
 },
-
-
-
-
-})
+});
 
 app.mount("#app");
