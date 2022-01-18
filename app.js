@@ -20,7 +20,21 @@ const app = Vue.craeteApp({
 
         ],
     };
-}
+},
+
+methods: {
+    addToSum(operator) {
+        this.sum += operator;
+    },
+
+    evalSum() {
+        this.sum = eval(this.sum);
+    },
+
+    clearSum() {
+        this.sum = ""
+    },
+},
 
 
 
