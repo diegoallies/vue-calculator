@@ -19,8 +19,8 @@ const app = Vue.craeteApp({
             ".",
 
         ],
-    };
-},
+    },
+
 
 methods: {
     addToSum(operator) {
@@ -39,4 +39,6 @@ methods: {
 
 
 
-)
+})
+
+app.mount("#app");
